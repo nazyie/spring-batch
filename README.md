@@ -17,11 +17,11 @@ OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
 ### Highlight Keyword
 <hr />
 
-1. Job launcher
-2. Job
-3. Step
-4. Job Repository
-5. Tasklet
+1. Job launcher - job launcher that launch the job
+2. Job - job bean that will be executed
+3. Step - each job will have a step to run
+4. Job Repository - job repository will relate to managing the repository
+5. Tasklet 
 6. Chunks
 7. Task
 8. Multithread processing
