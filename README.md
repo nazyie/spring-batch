@@ -20,11 +20,14 @@ OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
 1. Job launcher - job launcher that launch the job
 2. Job - job bean that will be executed
 3. Step - each job will have a step to run
+   1. ItemReader - a lot of itemReader and itemWriter available from spring batch https://docs.spring.io/spring-batch/docs/current/reference/html/appendix.html#listOfReadersAndWriters
+   2. ItemProcessor - used to handle process the item
+   3. ItemWriter - used to write the item
 4. Job Repository - job repository will relate to managing the repository
 5. Tasklet 
 6. Chunks
 7. Task
-8. Multithread processing
+8. Multithreading processing
 9. Parallel steps
 10. Async itemProcessor/itemWriter
 11. Partitioning

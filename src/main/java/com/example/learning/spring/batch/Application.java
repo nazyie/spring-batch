@@ -11,6 +11,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Arrays;
 import java.util.Date;
 
 /**
@@ -38,9 +39,11 @@ public class Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+		// We can receive the job parameter and used in the logic
 		JobParameters jobParameters = new JobParametersBuilder()
 				.addDate("date", new Date())
 				.addLong("startAt", System.currentTimeMillis())
+				.addString("sampleKey", Arrays.stream(args).filter(val -> val.contains("--sampleKey")).toString())
 				.toJobParameters();
 
 		JobExecution execution = jobLauncher.run(job, jobParameters);
