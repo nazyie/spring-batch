@@ -41,9 +41,9 @@ public class Application implements CommandLineRunner {
 
 		// We can receive the job parameter and used in the logic
 		JobParameters jobParameters = new JobParametersBuilder()
-				.addDate("date", new Date())
+//				.addDate("date", new Date())
 				.addLong("startAt", System.currentTimeMillis())
-				.addString("sampleKey", Arrays.stream(args).filter(val -> val.contains("--sampleKey")).toString())
+//				.addString("sampleKey", Arrays.stream(args).filter(val -> val.contains("--sampleKey")).toString())
 				.toJobParameters();
 
 		JobExecution execution = jobLauncher.run(job, jobParameters);
