@@ -10,7 +10,6 @@ import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDateTime;
 
@@ -30,7 +29,7 @@ import java.time.LocalDateTime;
  * Present ? Give to customer
  * Not present ? Leave at Door
  */
-@Configuration
+//@Configuration
 public class BatchDeepConfiguration {
 
     @Autowired
