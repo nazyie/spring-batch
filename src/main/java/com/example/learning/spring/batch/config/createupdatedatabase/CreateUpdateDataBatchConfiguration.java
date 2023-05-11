@@ -26,8 +26,7 @@ import java.util.Collections;
  * ITEM READER -> ITEM PROCESSOR -> ITEM WRITER
  * ---------------------------------------------
  */
-@Configuration
-@EnableBatchProcessing
+//@Configuration
 public class CreateUpdateDataBatchConfiguration {
 
     @Autowired
